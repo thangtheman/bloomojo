@@ -1,0 +1,276 @@
+	<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet'>
+	
+<title>
+	Member Signup</title>
+	<link href="../favicon.ico.html" type="image/x-icon" rel="icon" /><link href="../favicon.ico.html" type="image/x-icon" rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="../css/front/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/front/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/front/main.css" />
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-58039667-1', 'auto');
+ga('send', 'pageview');
+</script>
+</head>
+<body>
+<script type="text/javascript">SITE_URL = 'http://bloomojo.com/'</script>
+
+<!--hero-unit-->
+<div class="hero-unit-member-signup"> 
+ <div class="overlay" style="background:none;"></div>
+  <!--container-->
+  <div class="container" style="width: 100%;">
+	<header class="row" style="position: relative;">
+ <div style="" class="col-md-12 col-sm-12">
+       <!---logo--->
+       <div class="logo" style="width: 100%; text-align: center; text-align: left;"><a href="../index.html" alt="bloomojo" title="bloomojo"><img src="../img/front/signup_logo.png" alt="bloomojo" title="bloomojo" /></a></div>
+       <!---logo end--->
+ </div>
+ <div class="col-md-6 col-sm-6 clearfix social-upper" style="position: absolute; right: 0px;">
+       <!-social->
+       <ul class="social text-center">
+         <li><a target="_blank" href="https://www.twitter.com/gobloomojo"><i class="fa fa-twitter"></i></a></li>
+         <li><a target="_blank" href="https://www.facebook.com/bloomojo"><i class="fa fa-facebook"></i></a></li>
+         <li><a target="_blank" href="https://plus.google.com/112511109029747945926/videos"><i class="fa fa-google-plus"></i></a></li>
+       </ul>
+       <!-social end->
+ </div>
+</header>
+
+
+
+
+ 
+   
+  </div>
+  <!--container end--> 
+</div>
+<!--hero-unit end--> 
+
+<section class="contact text-center section-spacing" id="contact">
+	<div class="container">
+    <!--<h3>OUR FEATURES Learn More</h3>-->
+    <div class="row">
+	<div class="col-md-12">
+	<h4 class="technology sign" style="font-family:Montserrat-Hairline !important;">Simplify your life by discovering your local wellness practitioners.<br /> 
+Order products and services directly to your door. Anytime. Anywhere. </h4>
+<h4 class="technology sign" style="font-family:Montserrat-Hairline !important;">Join our 50,000 members and share with others, to get early access when we launch!</h4><br /> 
+	</div></div></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 center-block"> 
+        <div class="contact-form">
+         		  <form action="/users/member_signup" role="form" id="UserMemberSignupForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/><input type="hidden" name="data[_Token][key]" value="fedb7593d89199c9ce7a241a8712800654054b5e" id="Token992856491"/></div>            <div class="form-group">                                                      
+			  <input name="data[User][first_name]" value="" id="firstname-s" class="slide-left form-control" placeholder="First Name" type="text"/>            </div>
+            <div class="form-group">
+			   <input name="data[User][last_name]" value="" id="lastname-s" class="slide-left form-control" placeholder="Last Name" type="text"/>            </div>
+			<div class="form-group">
+			   <input name="data[User][email]" value="" id="email-s" class="slide-left form-control" placeholder="Name@example.com" type="text"/>            </div>
+			<div class="form-group">
+			   <input name="data[User][phone_number]" value="" id="phone-s" class="slide-left form-control" placeholder="Phone (optional)" type="text"/>            </div>
+			<div class="form-group">
+			   <input name="data[User][twitter]" value="" id="twitter-s" class="slide-left form-control" placeholder="@Twitter" type="text"/>            </div>
+			<div class="form-group">
+			   <input name="data[User][zipcode]" value="" id="zipcode-s" class="slide-left form-control" placeholder="Zipcode" type="text"/>            </div>
+			<div class="form-group">
+			   <input name="data[User][city]" value="" id="city-s" class="slide-left form-control" placeholder="City" type="text"/>            </div>
+			<div class="form-group">
+			   <select name="data[User][about_us]" id="hear-aboout-us-s" class="slide-left form-control">
+<option value="">Where did you hear about us?</option>
+<option value="1">Radio</option>
+<option value="2">Tv/Cable News</option>
+<option value="3">Family and Friend</option>
+<option value="4">Colleague</option>
+<option value="5">Email/Newsletter</option>
+<option value="6">Website/Search Engine</option>
+<option value="7">News/Magazine/Article</option>
+<option value="8">Mail</option>
+<option value="9">other</option>
+</select>            </div>
+			<div style="float:left;width:100%">
+				<div style="float:left;width:50%">
+					<div class="submit"><input  class="slide-right btn button" type="submit" value="Register Now"/></div>				</div>
+				<div style="float:right;width:50%">
+					<button type="button" class="slide-right btn button" onclick="redirect_send_invitation()">Invite your friends</button>				</div>
+			</div>
+          <div style="display:none;"><input type="hidden" name="data[_Token][fields]" value="67abeb23ca71747960f2c70cedcc7dfba074cf22%3A" id="TokenFields765582807"/><input type="hidden" name="data[_Token][unlocked]" value="" id="TokenUnlocked2073956836"/></div></form>          
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="scroll-top"><a href="member_signup.html#"><i class="fa fa-chevron-up"></i></a></p>
+</section>
+<!-- signup end-->
+<!--
+
+<section class="features text-center section-spacing"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" style="width:100%;">
+        <div class="slide-left feature">
+          <h4 style="line-height: 1.5;font-family:Montserrat-Light">BLOOMOJO IS YOUR MARKETPLACE <br /> 
+FOR DISCOVERING AND BOOKING  <br />
+YOUR LOCAL WELLNESS PRACTITIONERS, <br />
+BRINGING PRODUCTS  AND SERVICES TO YOU<br />
+  ANYWHERE, ANYTIME.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+
+<section class="features text-center section-spacing" style="background:none repeat scroll 0 0 #fff !important"> 
+  
+  <div class="container">
+    <h4 style="margin: 0 0 36px;font-family:Montserrat-Light" class="memberLaunch">
+	Bloomojo is simply amazing. Be the first to hear about our launch<br/>
+	Join our community now! 
+	
+	</h4>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="slide-left feature">           <h4 style="text-transform: uppercase;font-family:Montserrat-Light;margin-top:32px;" class="memberIcon">Find Practitioners</h4>
+		 <ul style="list-style: circle;text-align:center;padding: 0;
+  margin: 0;">
+		  <li>We give you free access to thousands of trusted and reliable wellness practitioners throughout the country.</li>
+		  <li>It&#39;s easy to find your favorite bloomer in your neighborhood.</li>
+		  </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="slide-top feature">  
+          <h4 style="text-transform: uppercase;font-family:Montserrat-Light;margin-top:32px;" class="memberIcon">Book Online</h4>
+         
+		  <ul style="list-style: circle;text-align:center;padding: 0;
+  margin: 0;">
+		  <li>It&#39;s free to join, browse and access bloomojo wellness marketplace.</li>
+		  <li>Book anywhere, anytime all wellness services on-demand with simple click.</li>
+		  <li>Relax and Enjoy!</li>
+		  </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="slide-right feature">  
+          <h4 style="text-transform: uppercase;font-family:Montserrat-Light;margin-top:32px;" class="memberIcon">Shop Wellness Bazaar</h4>
+          
+		   <ul style="list-style: circle;text-align:center;padding: 0;
+  margin: 0;">
+		   <li>Discover thousands of wellness products exclusively offered by our bloomers.</li>
+		   </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>-->
+<!--features end--> 
+
+<!--counter-->
+<div class="counter text-center">
+  <div class="overlay"></div>
+  <!--container-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-xs-6"> <i class="fa fa-users fa-3x"></i>
+        <h3 class="total-number-1">0</h3>
+        <p>Subscribed Members</p>
+      </div>
+      <div class="col-sm-3 col-xs-6"> <i class="fa fa-thumbs-up fa-3x"></i>
+        <h3 class="total-number-2">0</h3>
+        <p>Followers</p>
+      </div>
+      <div class="col-sm-3 col-xs-6"> <i class="fa fa-smile-o fa-3x"></i>
+        <h3 class="total-number-3">0</h3>
+        <p>Talking About </p>
+      </div>
+      <div class="col-sm-3 col-xs-6"> <i class="fa fa-heart fa-3x"></i>
+        <h3 class="total-number-4">0</h3>
+        <p>Registered Practitioners</p>
+      </div>
+    </div>
+  </div>
+  <!--container end--> 
+</div>
+<!--counter end--> <script type="text/javascript">
+
+	function redirect_send_invitation()
+	{
+		window.location.href="/users/send_invitation";	
+	}
+	
+
+</script>
+<!--
+<footer class="site-footer text-center"> 
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"> 
+        
+    
+        <ul class="social-footer">
+          <li class="slide-left"><a href="https://www.twitter.com/gobloomojo" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li class="slide-top"><a href="https://www.facebook.com/bloomojo" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li class="slide-top"><a href="https://plus.google.com/112511109029747945926/videos" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+          <li class="slide-right"><a href="https://www.linkedin.com/company/bloomojo" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      
+        
+        <small class="slide-top">Made with <i class="fa fa-heart fa-3x" style="font-size:1em;"></i> in California bloomojo corporation, <br/>Santa Monica, CA, 90401<br/><span class="bold">Bloomojo @</span> 2015</small></div>
+    </div>
+  </div>
+
+  
+</footer>
+-->
+<footer class="site-footer text-center"> 
+  <!--container-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"> 
+        
+        <!--Social media-->
+        <ul class="social-footer">
+          <li class="slide-left" style="opacity: 1; visibility: visible; position: relative; right: 0px;"><a target="_blank" href="https://www.twitter.com/gobloomojo"><i class="fa fa-twitter"></i></a></li>
+          <li class="slide-top" style="opacity: 1; visibility: visible; position: relative; bottom: 0px;"><a target="_blank" href="https://www.facebook.com/bloomojo"><i class="fa fa-facebook"></i></a></li>
+          <li class="slide-top" style="opacity: 1; visibility: visible; position: relative; bottom: 0px;"><a target="_blank" href="https://plus.google.com/112511109029747945926/videos"><i class="fa fa-google-plus"></i></a></li>
+          <li class="slide-right" style="opacity: 1; visibility: visible; position: relative; left: 0px;"><a target="_blank" href="https://www.linkedin.com/company/bloomojo"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+        <!--Social media end--> 
+        
+        <small class="slide-top" style="">Made with <i style="font-size:1em;color:#FF0000;" class="fa fa-heart fa-3x"></i> in California</small><br/>
+		<span style="font-size:87%;"><a href="mailto:team@bloomojo.com">team@bloomojo.com</a></span>
+		</div>
+    </div>
+  </div>
+  <!--container end--> 
+  
+</footer>
+ 
+<!--PRELOAD-->
+<div id="preloader">
+  <div id="status"></div>
+</div>
+<!--end PRELOAD--> 
+
+	<script type="text/javascript" src="../js/front/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../js/front/retina.min.js"></script>
+	<script type="text/javascript" src="../js/front/waypoints.min.js"></script>
+	<script type="text/javascript" src="../js/front/jquery.animateNumber.min.js"></script>
+	<script type="text/javascript" src="../js/front/jquery.fadethis.min.js"></script>
+	<script type="text/javascript" src="../js/front/jquery.downCount.js"></script>
+	<script type="text/javascript" src="../js/front/jquery.form.min.js"></script>
+	<script type="text/javascript" src="../js/front/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="../js/front/main.js"></script>
+</body>
+</html>
